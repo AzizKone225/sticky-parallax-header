@@ -373,6 +373,7 @@ class StickyParallaxHeader extends Component {
             minHeight: scrollViewMinHeight,
             backgroundColor: shouldUseBgColor,
           }}
+          contentInsetAdjustmentBehavior={'never'}
           onScrollEndDrag={() => this.onScrollEndSnapToEdge(scrollHeight)}
           scrollEventThrottle={1}
           stickyHeaderIndices={shouldRenderTabs ? [1] : []}
